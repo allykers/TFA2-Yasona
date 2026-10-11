@@ -62,19 +62,42 @@ main {
     font-size: 17px;
 }
 
+.dashboard-container {
+    width: 100%;
+    min-height: calc(100vh - 55px);
+    margin: 0;
+    padding: 60px 7%;
+    background-color: #fff8ef;
+}
+
+.dashboard-container h1 {
+    color: #5d4037;
+    text-align: center;
+    font-size: 36px;
+}
+
+.dashboard-container > p {
+    text-align: center;
+    color: #795548;
+    font-size: 18px;
+}
+
 .dashboard-cards {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     width: 100%;
-    margin-top: 25px;
+    margin-top: 45px;
 }
 
 .dashboard-card {
     flex: 1;
-    padding: 25px;
+    min-height: 210px;
+    padding: 30px;
     background-color: #fff3e0;
     border: 1px solid #d7a86e;
-    border-radius: 5px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(93, 64, 55, 0.15);
 }
 
 .dashboard-card h2 {
@@ -84,6 +107,7 @@ main {
 
 .dashboard-card p {
     min-height: 45px;
+    color: #4e342e;
 }
 
 .dashboard-card span {
@@ -93,12 +117,12 @@ main {
 
 .dashboard-card a {
     display: inline-block;
-    margin-top: 10px;
-    padding: 8px 12px;
+    margin-top: 15px;
+    padding: 10px 15px;
     background-color: #6d4c41;
     color: white;
     text-decoration: none;
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 .dashboard-card a:hover {
@@ -123,3 +147,132 @@ th {
     color: white;
 }
 
+.add-button {
+    display: inline-block;
+    margin: 10px 0 20px;
+    padding: 10px 15px;
+    background-color: #6d4c41;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.add-button:hover {
+    background-color: #4e342e;
+}
+
+.form-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #fff3e0;
+    border: 1px solid #d7a86e;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-container input {
+    padding: 10px;
+    border: 1px solid #c5a880;
+    border-radius: 4px;
+}
+
+.form-container button {
+    width: fit-content;
+    margin-top: 20px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    background-color: #6d4c41;
+    color: white;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #4e342e;
+}
+
+.cancel-button {
+    width: fit-content;
+    margin-top: 10px;
+    color: #5d4037;
+}
+
+.error-message {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #ffcdd2;
+    color: #b71c1c;
+    border: 1px solid #e57373;
+    border-radius: 4px;
+}
+
+.error-message p {
+    margin: 5px 0;
+}
+
+.success-message {
+    padding: 10px;
+    background-color: #c8e6c9;
+    color: #256029;
+    border: 1px solid #81c784;
+    border-radius: 4px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #d7a86e;
+}
+
+.login-container {
+    max-width: 450px;
+    margin: 60px auto;
+    background-color: #fff3e0;
+    border: 1px solid #d7a86e;
+}
+
+.login-container h1 {
+    text-align: center;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-container input {
+    padding: 10px;
+    border: 1px solid #c5a880;
+    border-radius: 4px;
+}
+
+.login-container button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #6d4c41;
+    color: white;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #4e342e;
+}

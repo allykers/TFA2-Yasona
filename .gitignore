@@ -124,3 +124,12 @@ _modules/*
 
 /results/
 /phpunit.xml
+
+.env
+/writable/*
+!/writable/.gitkeep
+
+/public/uploads/users/*
+!/public/uploads/users/.gitkeep
+
+/vendor/
